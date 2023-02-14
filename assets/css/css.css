@@ -180,6 +180,15 @@ div.color {
   font-family: Georgia, Times, Serif;
   padding: 10px;
 }
+.projectCTWCode
+{
+  color: aliceblue;
+  font-size: 120%;
+  font-family: Georgia, Times, Serif;
+  padding: 10px;
+  white-space: pre-wrap; 
+  word-break: keep-all;
+}
 .projectName
 {
   color: #AEBAB1;
