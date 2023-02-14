@@ -1,0 +1,212 @@
+/*
+color scheme:
+#3C3C44 - background
+#F0F8FF - text/light color
+#302836 - dark accent
+#8b7e82 - light accent
+#7a858b - main color
+#F4F6F4 - color pop (green)
+#C9D0F7 - color pop (purple)
+#00416a - color pop (teal)
+#246bce - color pop (blue)
+*/
+
+/* * {box-sizing: border-box;}
+
+/* For mobile phones: 
+[class*="col-"] 
+{width: 100%;}
+  @media only screen and (min-width: 768px) 
+  {
+    /* For desktop: 
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+}
+[class*="col-"] 
+{float: left;padding: 1px; border: 0px solid white;}
+.row::after{content: "";clear: both;display: table;} */
+
+/* body{
+margin: 0%;
+/*background-image: 
+     url("background.jpg");
+    background-size: 50%, 50%, 50%; 
+background-color: #3C3C44;
+} */
+
+.center
+{
+  text-align: center;
+}
+.noDec
+{
+  text-decoration: none;
+}
+.WidthHeight
+{
+  width: 100%;
+  height: auto;
+}
+
+
+
+
+#myLinkedin
+{
+  color: #BCC5E6;
+  font-size: 200%;
+  text-decoration: none;
+}
+#myContactInfo
+{
+  color: #F4F6F4;
+  font-size: 200%;
+  text-decoration: none;
+}
+/* 
+.SP{
+  width:100%; 
+  height: auto;} */
+
+.Hover{
+  width:100%; 
+  height: auto;
+	opacity: 1;
+	-webkit-transition: .1s ease-in-out;
+	transition: .1s ease-in-out;
+}
+.Hover:hover {
+	opacity: .5;
+} 
+
+.text
+{
+  color: #F0F8FF;
+  text-align: justify;
+}
+.nav
+{
+  color:#F0F8FF;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  text-align: center;
+  text-decoration: none;
+}
+.nav:hover
+{
+color: #3473b6;
+size: larger;
+}
+#bio
+{
+  color: #F0F8FF;
+  font-family:'Times New Roman', Times, serif;
+  font-size: 200%;
+}
+.BioButton
+{
+  background-color: #C9D0F7;
+  color: #3C3C44;
+  border-radius: 12px;
+  font-size: 100%;
+  border-color: #3C3C44;
+}
+.BioButton:hover{background-color: #3C3C44;
+color: #C9D0F7;
+}
+#AbMeLink
+{
+  color: hwb(120 96% 4%);
+  font-size: 200%;
+}
+#aboutMe
+{
+  color: #F0F8FF;
+  font-size: 150%;
+  font-family: 'Times New Roman', Times, serif;
+  
+}
+.vineDec
+{
+  width: 100%;
+  height: auto;
+}
+.myName
+{
+  color: aliceblue;
+  font-size: 100%;
+}
+div.color {
+	background: linear-gradient(-45deg, #AEBAB1, #8493d0, #246bce, #F0F8FF);
+	background-size: 300%;
+	font-family:Georgia, 'Times New Roman', Times, serif;
+	font-weight: 900;
+	font-size: 5vw;
+	letter-spacing: -5px;
+	text-transform: uppercase;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	animation: animated_text 5s ease-in-out infinite;
+	-moz-animation: animated_text 5s ease-in-out infinite;
+	-webkit-animation: animated_text 5s ease-in-out infinite;
+}
+
+@keyframes animated_text {
+	0% { background-position: 0px 50%; }
+	50% { background-position: 100% 50%; }
+	100% { background-position: 0px 50%; }
+} 
+
+.projectHead
+{
+  color:#C9D0F7;
+  text-align: center;
+  font-size: 200%;
+  font-family: Cochin, Georgia, Times, Serif;
+}
+.projectText
+{
+  color: aliceblue;
+  font-size: 120%;
+  font-family: Georgia, Times, Serif;
+  padding: 10px;
+}
+.projectName
+{
+  color: #AEBAB1;
+  text-align: center;
+  font-size: 400%;
+  font-family: 'Times New Roman', Times, serif;
+}
+.list
+{
+  color: aliceblue;
+  font-size: 110%;
+  font-family: Georgia, Times, Serif;
+  padding: none;
+}
+/* .kilroy
+{
+  width: 100%;
+  height: auto;
+} */
+
+.navcolor
+{
+  background-color: aliceblue;
+  text-decoration: none;
+}
+.story
+{
+  color: aliceblue;
+  text-indent: 1em;
+}
