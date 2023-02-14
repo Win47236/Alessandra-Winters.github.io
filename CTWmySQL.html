@@ -1,0 +1,111 @@
+<html>
+    <head>
+        <!-- Required for responsive websites -->
+        <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+        <title> Home </title>
+        <link rel="shortcut icon" type="assets/jpg" href="assets/favicon.jpg">
+        <link rel='stylesheet' href='assets/css/css.css'>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/b55f8b7344.js" crossorigin="anonymous"></script>
+    </head>
+    <body class="bg-black">
+        <div class="container">
+            <div class="col-12">
+                <pre class="projectText" style="white-space: pre-wrap; word-break: keep-all;">
+                    //Packages
+                const http = require('http');
+                const url = require('url');
+                const mysql = require('mysql2');
+                
+                //MySQL Database Connection
+                const con = mysql.createConnection({
+                  host: "bsu-gimm260-fall-2021.cwtgn0g8zxfm.us-west-2.rds.amazonaws.com",
+                  user: "ALESSANDRAWINTER",
+                  password: "Il6WvvDRUV95ZvQMePHfpxrlkvviimMVcz5",
+                  database: 'ALESSANDRAWINTER'
+                });
+                
+                //Parameters for server
+                const hostname = '127.0.0.1';
+                const port = 3000;
+                
+                const server = http.createServer((request, response) => {
+                  //GET parameters (e.g. www.google.com?search=how-to-programming&)
+                  const getParameters = url.parse(request.url, true).query;
+                
+                  //SELECT statement variables
+                  let selectSql = 'SELECT Name, Land_Area, Population, Age, Length_of_Reign, How_It_Ended, Era, Title, is_King, Government_Type, Country FROM `takingOverTheWorld`',
+                      whereStatements = [],
+                      orderByStatements = [],
+                      queryParameters = [];
+                
+                  if (typeof getParameters.is_King !== 'undefined' && parseInt(getParameters.is_King) === 1) {
+                    whereStatements.push("is_King = '1'");
+                  }
+                    console.log(getParameters.is_King);
+                
+                  if(typeof getParameters.Name !=='undefined' && getParameters.Name.length >0){
+                    const Name = getParameters.Name;
+                    whereStatements.push('Name LIKE ?');
+                    queryParameters.push('%'+Name+'%');
+                  }
+                  
+                  if (typeof getParameters.Era !== 'undefined') {
+                      const sort = getParameters.Era;
+                      if(sort === 'ASC'){
+                        orderByStatements.push('Era ASC');
+                      } else if (sort === 'DESC') {
+                        orderByStatements.push('Era DESC')
+                      }
+                  }
+                
+                  if(typeof getParameters.Government_Type !== 'undefined'){
+                    const sort= getParameters.Government_Type;
+                    if(sort === 'ASC'){
+                      orderByStatements.push('Government_Type ASC');
+                    } else if (sort === 'Government_Type DESC') {
+                      orderByStatements.push('DESC')
+                    }
+                  }
+                
+                  //Dynamically add WHERE expressions to SELECT statements if needed
+                  if (whereStatements.length > 0) {
+                    selectSql = selectSql + ' WHERE ' + whereStatements.join(' AND ');
+                  }
+                
+                  //Dynamically add ORDER BY expressions to SELECT statements if needed
+                  if (orderByStatements.length > 0) {
+                    selectSql = selectSql + ' ORDER BY ' + orderByStatements.join(', ');
+                  }
+                
+                  console.log(selectSql);
+                  con.query(selectSql, queryParameters, function (err, result) {
+                    if (err)  {
+                      throw err;
+                    } else {
+                      response.writeHead(
+                        200, {                             //HTTP Code 200 = Everything is OK
+                        'Content-Type': 'text/json',       //Setting return type of result to JSON
+                        'Access-Control-Allow-Origin': '*' //Prevent CORS error
+                      }).end(
+                        JSON.stringify({
+                        'result': 200,
+                        'classes' : result
+                      }));     
+                    }
+                  }); 
+                }).listen(port, hostname, () => {
+                  console.log(`Server running at http://${hostname}:${port}/`);
+                });
+                </pre>
+            </div>
+        <div class="col-3 bg-black">
+            <a href="index.html" class="BioButton">
+                <button type="button" class="BioButton"> Return To Main Page</button>
+            </a>
+        </div>
+        <div class="col-9"></div>
+        </div>
+    </body>
+</html>
