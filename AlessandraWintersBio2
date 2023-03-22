@@ -49,12 +49,6 @@
                         </ul>
                     </div>
 
-                    <!--About me-->
-                    <div class="row text-center">
-                        <div class="col">
-                                <p id="AbMeLink"> <i class="fa-solid fa-spa"></i> About Me <i class="fa-solid fa-spa"></i> </p>
-                        </div>
-                    </div>
                     <!--bio-->
                     <div class="row">
                         <div class="col">
