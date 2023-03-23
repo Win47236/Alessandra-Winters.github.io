@@ -6,10 +6,16 @@ color scheme:
 #8b7e82 - light accent
 #7a858b - main color
 #ADB8AF - color pop (green)
+#BCB0C4 - color pop (purple 2)
 #C9D0F7 - color pop (purple)
 #00416a - color pop (teal)
 #246bce - color pop (blue)
 */
+
+.test
+{
+  color: #3C3C44 #F0F8FF #302836 #8b7e82 #7a858b #ADB8AF #BCB0C4 #C9D0F7 #00416a #246bce ;
+}
 
 /* * {box-sizing: border-box;}
 
@@ -226,4 +232,12 @@ div.color {
 {
   color: aliceblue;
   text-indent: 1em;
+}
+.returnButton
+{
+  color: #8b7e82;
+  text-decoration: none;
+  font-weight: 3rem;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 1.4rem;
 }
