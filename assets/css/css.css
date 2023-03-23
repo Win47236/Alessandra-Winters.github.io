@@ -5,7 +5,7 @@ color scheme:
 #302836 - dark accent
 #8b7e82 - light accent
 #7a858b - main color
-#F4F6F4 - color pop (green)
+#ADB8AF - color pop (green)
 #C9D0F7 - color pop (purple)
 #00416a - color pop (teal)
 #246bce - color pop (blue)
@@ -69,7 +69,7 @@ background-color: #3C3C44;
 }
 #myContactInfo
 {
-  color: #F4F6F4;
+  color: #ADB8AF;
   font-size: 200%;
   text-decoration: none;
 }
@@ -101,6 +101,14 @@ background-color: #3C3C44;
   text-align: center;
   text-decoration: none;
 }
+.nav-link
+{
+ color:#ADB8AF;
+}
+.nav-link:hover
+{
+  color:#C9D0F7 ;
+}
 .nav:hover
 {
 color: #3473b6;
@@ -110,7 +118,7 @@ size: larger;
 {
   color: #F0F8FF;
   font-family:'Times New Roman', Times, serif;
-  font-size: 200%;
+  font-size: 1.7rem;
 }
 .BioButton
 {
@@ -123,15 +131,15 @@ size: larger;
 .BioButton:hover{background-color: #3C3C44;
 color: #C9D0F7;
 }
-#AbMeLink
+.AbMeLink
 {
   color: hwb(120 96% 4%);
-  font-size: 200%;
+  font-size: 1.7rem;
 }
 .aboutMe
 {
   color: #F0F8FF;
-  font-size: 150%;
+  font-size: 1.5rem;
   font-family: 'Times New Roman', Times, serif;
   
 }
