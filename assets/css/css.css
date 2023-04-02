@@ -241,3 +241,75 @@ div.color {
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 1.4rem;
 }
+
+/* resume page css rules */
+.preformatted
+{
+  color: aliceblue;
+  font-size: 120%;
+  font-family: Georgia, Times, Serif;
+  word-break: keep-all;
+}
+.halfsize
+{
+  font-size: .5em;
+}
+.threefourths
+{
+  font-size: .75em;
+}
+.slight
+{
+  font-size: 1.25em;
+}
+.size1
+{
+font-size: 1.5em;
+}
+.size2
+{
+  font-size: 2em;
+}
+.size3
+{
+  font-size: 3em;
+}
+/*font alignment*/
+.resumeCenter
+{
+  text-align: center;
+}
+.resumeRight
+{
+  text-align: right;
+}
+/*decorations*/
+.bold
+{
+  font-weight: bold;
+}
+.italics
+{
+  font-style: italic;
+}
+.underline
+{
+  text-decoration: underline;
+}
+/*colors*/
+.blue
+{
+color:#A5B5D5 ;
+}
+.purple
+{
+color: #CCA1F7;
+}
+.green
+{
+color: #87C530;
+}
+.red
+{
+color: #F297DB;
+}
