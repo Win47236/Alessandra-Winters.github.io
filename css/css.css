@@ -62,6 +62,56 @@ text/main bg(off white): #F1EFED
   font-size: 2em;
   font-family: Georgia, 'Times New Roman', Times, serif;
   padding-top: .5em;
+  font-weight: normal;
+}
+
+.headings2 {
+  text-align: left;
+  color: #140d0d;
+  font-size: 1.2em;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  padding-top: .5em;
+  font-weight: normal;
+}
+
+.headings3 {
+  text-align: center;
+  color: #140d0d;
+  font-size: 1.2em;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  padding-top: .5em;
+  font-weight: normal;
+}
+
+.evenSplitTable{
+  width: 33.33%;
+  height: 33.33%;
+}
+
+.tableHeadings1 {
+  text-align: center;
+  color: #140d0d;
+  font-size: 1.7em;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: 100;
+  width: 30%;
+}
+
+.myTableBorder {
+  border: 1px solid #140d0d;
+}
+
+/* .myTableBorder2 {
+  border: 1px solid #140d0d;
+  border-collapse: separate;
+} */
+
+.textCentered {
+  text-align: center;
+}
+
+.topAlign {
+  vertical-align: top;
 }
 
 .iconPadding {
@@ -71,32 +121,42 @@ text/main bg(off white): #F1EFED
   color: #140d0d;
 }
 
+.favProjectsPadding{
+  padding: 1em;
+  vertical-align: top;
+}
 .headerPadding {
   padding-top: 1em;
   /* margin-bottom: 1em; */
 }
 
-#footerPadding
-{
+#footerPadding {
   padding-top: 2em;
   padding-bottom: 2em;
 }
+
 .liNone {
   list-style-type: none;
 }
 
 #nameImage {
-  width: auto;
-  height: 86.4px;
+  width: 90%; /*auto*/
+  height: 100%; /*86.4px*/
 }
 
-#headShot{
+#headShot {
   padding-top: 2em;
-  width:auto;
-  height: 500px;
+  width: 100%; /*auto*/
+  height: 80%; /*500px*/
 }
 
-.topBorder{
+.image{
+  padding: 2em;
+  width: 100%;
+  height:100%;
+}
+
+.topBorder {
   border-top: 1px solid #f1efed;
 }
 
