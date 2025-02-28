@@ -109,7 +109,11 @@ text/main bg(off white): #F1EFED
 .textCentered {
   text-align: center;
 }
-
+.alignRight{
+  text-align: right;
+  padding-left: 2em;
+  padding-right: 1em;
+}
 .topAlign {
   vertical-align: top;
 }
@@ -122,9 +126,11 @@ text/main bg(off white): #F1EFED
 }
 
 .favProjectsPadding{
-  padding: 1em;
+  padding-top: 1em;
+  padding-left: 1em;
   vertical-align: top;
 }
+
 .headerPadding {
   padding-top: 1em;
   /* margin-bottom: 1em; */
