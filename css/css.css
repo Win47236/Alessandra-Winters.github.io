@@ -147,7 +147,7 @@ text/main bg(off white): #F1EFED
 #headShot {
   padding-top: 2em;
   width: 100%; /*auto*/
-  height: 80%; /*500px*/
+  height: 100%; /*500px*/
 }
 
 .image{
