@@ -61,6 +61,7 @@ text/main bg(off white): #F1EFED
   color: #140d0d;
   font-size: 2em;
   font-family: Georgia, 'Times New Roman', Times, serif;
+  padding-top: .5em;
 }
 
 .iconPadding {
@@ -75,6 +76,11 @@ text/main bg(off white): #F1EFED
   /* margin-bottom: 1em; */
 }
 
+#footerPadding
+{
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
 .liNone {
   list-style-type: none;
 }
