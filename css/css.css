@@ -145,6 +145,7 @@ text/main bg(off white): #F1EFED
 }
 
 #headShot {
+  object-fit: contain;
   padding-top: 2em;
   width: 100%; /*auto*/
   height: 100%; /*500px*/
