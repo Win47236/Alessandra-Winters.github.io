@@ -56,8 +56,9 @@ text/main bg(off white): #F1EFED
   /* font-family: 'Playfair', serif; */
 }
 
-#mainName {
-  color: #f1efed;
+.headings1 {
+  text-align: center;
+  color: #140d0d;
   font-size: 2em;
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
@@ -84,6 +85,7 @@ text/main bg(off white): #F1EFED
 }
 
 #headShot{
+  padding-top: 2em;
   width:auto;
   height: 500px;
 }
