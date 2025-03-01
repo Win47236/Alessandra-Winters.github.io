@@ -83,7 +83,7 @@ text/main bg(off white): #F1EFED
   font-weight: normal;
 }
 
-.evenSplitTable{
+.evenSplitTable {
   width: 33.33%;
   height: 33.33%;
 }
@@ -101,19 +101,26 @@ text/main bg(off white): #F1EFED
   border: 1px solid #140d0d;
 }
 
-/* .myTableBorder2 {
-  border: 1px solid #140d0d;
-  border-collapse: separate;
-} */
+#sideNavBar {}
+
+.myDDMenu {
+  border: solid 1px #140d0d;
+  color: #140d0d;
+  background-color: #f1efed;
+  /* border: solid 1px #f1efed;
+  background-color: #140d0d; */
+}
 
 .textCentered {
   text-align: center;
 }
-.alignRight{
+
+.alignRight {
   text-align: right;
   padding-left: 2em;
   padding-right: 1em;
 }
+
 .topAlign {
   vertical-align: top;
 }
@@ -125,7 +132,7 @@ text/main bg(off white): #F1EFED
   color: #140d0d;
 }
 
-.favProjectsPadding{
+.favProjectsPadding {
   padding-top: 1em;
   padding-left: 1em;
   vertical-align: top;
@@ -146,21 +153,35 @@ text/main bg(off white): #F1EFED
 }
 
 #nameImage {
-  width: 90%; /*auto*/
-  height: 100%; /*86.4px*/
+  width: 90%;
+  /*auto*/
+  height: 100%;
+  /*86.4px*/
 }
 
 #headShot {
   object-fit: contain;
   padding-top: 2em;
-  width: 100%; /*auto*/
-  height: 100%; /*500px*/
+  width: 100%;
+  /*auto*/
+  height: 100%;
+  /*500px*/
 }
 
-.image{
+#constructionImg{
+  align-items: center;
+  object-fit: contain;
+  padding-top: .5em;
+  padding-bottom: 2em;
+  width: 90%;
+  /*auto*/
+  height: 90%;
+}
+
+.image {
   padding: 2em;
   width: 100%;
-  height:100%;
+  height: 100%;
 }
 
 .topBorder {
