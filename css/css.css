@@ -56,6 +56,14 @@ text/main bg(off white): #F1EFED
   /* font-family: 'Playfair', serif; */
 }
 
+.captionText{
+  color: #140d0d;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: small;
+  font-style: italic;
+  font-weight: 100;
+}
+
 .headings1 {
   text-align: center;
   color: #140d0d;
@@ -101,7 +109,42 @@ text/main bg(off white): #F1EFED
   border: 1px solid #140d0d;
 }
 
-#sideNavBar {}
+
+.myLink {
+  color:#f1efed;
+}
+
+.myLink:hover{
+  color: #f1efed;
+  text-decoration: underline #f1efed;
+}
+
+.myLink:visited{
+  color: #f1efed;
+}
+
+/* Side Nav Bar */
+.myLinkSide {
+  color:#790000;
+}
+
+.myLinkSide:hover{
+  color: #790000;
+  text-decoration: underline #790000;
+}
+
+.myLinkSide:visited{
+  color: #790000;
+}
+
+#sideNavBar {
+  padding-top: 2em;
+  padding-left: .5em;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  /* border: 2px solid #790000; */
+  /* background-color: #f1efed; */
+  color: #790000;
+}
 
 .myDDMenu {
   border: solid 1px #140d0d;
@@ -143,6 +186,10 @@ text/main bg(off white): #F1EFED
   /* margin-bottom: 1em; */
 }
 
+.bottomPadding{
+  padding-bottom: 2em;
+}
+
 #footerPadding {
   padding-top: 2em;
   padding-bottom: 2em;
@@ -168,7 +215,7 @@ text/main bg(off white): #F1EFED
   /*500px*/
 }
 
-#constructionImg{
+#constructionImg {
   align-items: center;
   object-fit: contain;
   padding-top: .5em;
@@ -179,9 +226,17 @@ text/main bg(off white): #F1EFED
 }
 
 .image {
-  padding: 2em;
+  object-fit:scale-down;
+  /* padding: .5em; */
   width: 100%;
   height: 100%;
+}
+
+.image2 {
+  object-fit:scale-down;
+  /* padding: .5em; */
+  width: 80%;
+  height: 80%;
 }
 
 .topBorder {
